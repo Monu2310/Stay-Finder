@@ -97,7 +97,6 @@ This is a full-stack application with:
 - **MongoDB** with Mongoose ODM
 - **JWT** for authentication
 - **bcryptjs** for password hashing
-- **Multer** for file uploads
 - **Express Validator** for input validation
 
 ## 📖 Documentation
@@ -114,7 +113,6 @@ This is a full-stack application with:
 - **Responsive Design**: Mobile-first, cross-device compatibility
 - **Search & Filters**: Advanced property search capabilities
 - **User Profiles**: Comprehensive user management
-- **Reviews & Ratings**: Property review system
 
 ## 🚀 Deployment
 
@@ -140,16 +138,6 @@ npm start
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Google Maps API for location services
-- MongoDB for database solutions
-- React community for excellent documentation
-- All contributors who help improve this project
 
 ---
 
