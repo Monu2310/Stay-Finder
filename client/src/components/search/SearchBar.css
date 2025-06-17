@@ -1,0 +1,275 @@
+.search-bar-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 1200px;
+  transform: translateY(-20px);
+}
+
+.search-bar {
+  width: 100%;
+}
+
+.search-row {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.main-search {
+  margin-bottom: 0;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  flex: 1;
+}
+
+.location-field {
+  flex: 2;
+  min-width: 200px;
+}
+
+.date-field,
+.guests-field,
+.price-field {
+  flex: 1;
+  min-width: 140px;
+}
+
+.search-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.search-input,
+.search-select {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+  background: white;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.search-input:focus,
+.search-select:focus {
+  border-color: #ff5a5f;
+  box-shadow: 0 0 0 3px rgba(255, 90, 95, 0.1);
+}
+
+.search-input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.date-input {
+  cursor: pointer;
+}
+
+.price-input {
+  max-width: 120px;
+}
+
+.search-actions {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+}
+
+.filter-toggle-btn {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+}
+
+.filter-toggle-btn:hover {
+  background: #f7f7f7;
+  border-color: #ccc;
+}
+
+.filter-toggle-btn.active {
+  background: #ff5a5f;
+  border-color: #ff5a5f;
+  color: white;
+}
+
+.search-button {
+  background: linear-gradient(135deg, #ff5a5f, #ff385c);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  box-shadow: 0 2px 8px rgba(255, 90, 95, 0.3);
+}
+
+.search-button:hover {
+  background: linear-gradient(135deg, #ff385c, #ff1744);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 90, 95, 0.4);
+}
+
+.search-button-text {
+  font-weight: 600;
+}
+
+/* Advanced Filters */
+.advanced-filters {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e6e6e6;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.advanced-row {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.clear-filters-btn {
+  background: #f7f7f7;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 48px;
+}
+
+.clear-filters-btn:hover {
+  background: #eee;
+  border-color: #ccc;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .search-row {
+    gap: 12px;
+  }
+  
+  .search-field {
+    min-width: 120px;
+  }
+  
+  .location-field {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar-container {
+    padding: 20px;
+    border-radius: 16px;
+    margin: 0 16px;
+    transform: translateY(-10px);
+  }
+  
+  .search-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .search-field {
+    min-width: 100%;
+  }
+  
+  .search-actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  .filter-toggle-btn,
+  .search-button {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .advanced-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .search-button-text {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar-container {
+    margin: 0 12px;
+    padding: 16px;
+    transform: translateY(-5px);
+  }
+  
+  .search-label {
+    font-size: 11px;
+  }
+  
+  .search-input,
+  .search-select {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .search-button,
+  .filter-toggle-btn {
+    min-height: 44px;
+    font-size: 13px;
+  }
+}

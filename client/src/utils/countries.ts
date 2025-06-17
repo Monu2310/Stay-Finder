@@ -1,0 +1,165 @@
+// Country data with currencies and phone codes
+export const COUNTRIES = [
+  { code: 'US', name: 'United States', currency: 'USD', currencySymbol: '$', phoneCode: '+1' },
+  { code: 'CA', name: 'Canada', currency: 'CAD', currencySymbol: 'C$', phoneCode: '+1' },
+  { code: 'GB', name: 'United Kingdom', currency: 'GBP', currencySymbol: '£', phoneCode: '+44' },
+  { code: 'AU', name: 'Australia', currency: 'AUD', currencySymbol: 'A$', phoneCode: '+61' },
+  { code: 'DE', name: 'Germany', currency: 'EUR', currencySymbol: '€', phoneCode: '+49' },
+  { code: 'FR', name: 'France', currency: 'EUR', currencySymbol: '€', phoneCode: '+33' },
+  { code: 'IT', name: 'Italy', currency: 'EUR', currencySymbol: '€', phoneCode: '+39' },
+  { code: 'ES', name: 'Spain', currency: 'EUR', currencySymbol: '€', phoneCode: '+34' },
+  { code: 'NL', name: 'Netherlands', currency: 'EUR', currencySymbol: '€', phoneCode: '+31' },
+  { code: 'BE', name: 'Belgium', currency: 'EUR', currencySymbol: '€', phoneCode: '+32' },
+  { code: 'AT', name: 'Austria', currency: 'EUR', currencySymbol: '€', phoneCode: '+43' },
+  { code: 'CH', name: 'Switzerland', currency: 'CHF', currencySymbol: 'CHF', phoneCode: '+41' },
+  { code: 'NO', name: 'Norway', currency: 'NOK', currencySymbol: 'kr', phoneCode: '+47' },
+  { code: 'SE', name: 'Sweden', currency: 'SEK', currencySymbol: 'kr', phoneCode: '+46' },
+  { code: 'DK', name: 'Denmark', currency: 'DKK', currencySymbol: 'kr', phoneCode: '+45' },
+  { code: 'FI', name: 'Finland', currency: 'EUR', currencySymbol: '€', phoneCode: '+358' },
+  { code: 'IS', name: 'Iceland', currency: 'ISK', currencySymbol: 'kr', phoneCode: '+354' },
+  { code: 'IE', name: 'Ireland', currency: 'EUR', currencySymbol: '€', phoneCode: '+353' },
+  { code: 'PT', name: 'Portugal', currency: 'EUR', currencySymbol: '€', phoneCode: '+351' },
+  { code: 'GR', name: 'Greece', currency: 'EUR', currencySymbol: '€', phoneCode: '+30' },
+  { code: 'PL', name: 'Poland', currency: 'PLN', currencySymbol: 'zł', phoneCode: '+48' },
+  { code: 'CZ', name: 'Czech Republic', currency: 'CZK', currencySymbol: 'Kč', phoneCode: '+420' },
+  { code: 'HU', name: 'Hungary', currency: 'HUF', currencySymbol: 'Ft', phoneCode: '+36' },
+  { code: 'SK', name: 'Slovakia', currency: 'EUR', currencySymbol: '€', phoneCode: '+421' },
+  { code: 'SI', name: 'Slovenia', currency: 'EUR', currencySymbol: '€', phoneCode: '+386' },
+  { code: 'HR', name: 'Croatia', currency: 'EUR', currencySymbol: '€', phoneCode: '+385' },
+  { code: 'RO', name: 'Romania', currency: 'RON', currencySymbol: 'lei', phoneCode: '+40' },
+  { code: 'BG', name: 'Bulgaria', currency: 'BGN', currencySymbol: 'лв', phoneCode: '+359' },
+  { code: 'EE', name: 'Estonia', currency: 'EUR', currencySymbol: '€', phoneCode: '+372' },
+  { code: 'LV', name: 'Latvia', currency: 'EUR', currencySymbol: '€', phoneCode: '+371' },
+  { code: 'LT', name: 'Lithuania', currency: 'EUR', currencySymbol: '€', phoneCode: '+370' },
+  { code: 'JP', name: 'Japan', currency: 'JPY', currencySymbol: '¥', phoneCode: '+81' },
+  { code: 'KR', name: 'South Korea', currency: 'KRW', currencySymbol: '₩', phoneCode: '+82' },
+  { code: 'CN', name: 'China', currency: 'CNY', currencySymbol: '¥', phoneCode: '+86' },
+  { code: 'IN', name: 'India', currency: 'INR', currencySymbol: '₹', phoneCode: '+91' },
+  { code: 'SG', name: 'Singapore', currency: 'SGD', currencySymbol: 'S$', phoneCode: '+65' },
+  { code: 'HK', name: 'Hong Kong', currency: 'HKD', currencySymbol: 'HK$', phoneCode: '+852' },
+  { code: 'TW', name: 'Taiwan', currency: 'TWD', currencySymbol: 'NT$', phoneCode: '+886' },
+  { code: 'MY', name: 'Malaysia', currency: 'MYR', currencySymbol: 'RM', phoneCode: '+60' },
+  { code: 'TH', name: 'Thailand', currency: 'THB', currencySymbol: '฿', phoneCode: '+66' },
+  { code: 'ID', name: 'Indonesia', currency: 'IDR', currencySymbol: 'Rp', phoneCode: '+62' },
+  { code: 'PH', name: 'Philippines', currency: 'PHP', currencySymbol: '₱', phoneCode: '+63' },
+  { code: 'VN', name: 'Vietnam', currency: 'VND', currencySymbol: '₫', phoneCode: '+84' },
+  { code: 'BR', name: 'Brazil', currency: 'BRL', currencySymbol: 'R$', phoneCode: '+55' },
+  { code: 'MX', name: 'Mexico', currency: 'MXN', currencySymbol: '$', phoneCode: '+52' },
+  { code: 'AR', name: 'Argentina', currency: 'ARS', currencySymbol: '$', phoneCode: '+54' },
+  { code: 'CL', name: 'Chile', currency: 'CLP', currencySymbol: '$', phoneCode: '+56' },
+  { code: 'CO', name: 'Colombia', currency: 'COP', currencySymbol: '$', phoneCode: '+57' },
+  { code: 'PE', name: 'Peru', currency: 'PEN', currencySymbol: 'S/', phoneCode: '+51' },
+  { code: 'UY', name: 'Uruguay', currency: 'UYU', currencySymbol: '$', phoneCode: '+598' },
+  { code: 'PY', name: 'Paraguay', currency: 'PYG', currencySymbol: '₲', phoneCode: '+595' },
+  { code: 'BO', name: 'Bolivia', currency: 'BOB', currencySymbol: 'Bs', phoneCode: '+591' },
+  { code: 'EC', name: 'Ecuador', currency: 'USD', currencySymbol: '$', phoneCode: '+593' },
+  { code: 'VE', name: 'Venezuela', currency: 'VES', currencySymbol: 'Bs.S', phoneCode: '+58' },
+  { code: 'ZA', name: 'South Africa', currency: 'ZAR', currencySymbol: 'R', phoneCode: '+27' },
+  { code: 'EG', name: 'Egypt', currency: 'EGP', currencySymbol: '£', phoneCode: '+20' },
+  { code: 'MA', name: 'Morocco', currency: 'MAD', currencySymbol: 'DH', phoneCode: '+212' },
+  { code: 'KE', name: 'Kenya', currency: 'KES', currencySymbol: 'KSh', phoneCode: '+254' },
+  { code: 'NG', name: 'Nigeria', currency: 'NGN', currencySymbol: '₦', phoneCode: '+234' },
+  { code: 'GH', name: 'Ghana', currency: 'GHS', currencySymbol: '₵', phoneCode: '+233' },
+  { code: 'RU', name: 'Russia', currency: 'RUB', currencySymbol: '₽', phoneCode: '+7' },
+  { code: 'TR', name: 'Turkey', currency: 'TRY', currencySymbol: '₺', phoneCode: '+90' },
+  { code: 'AE', name: 'United Arab Emirates', currency: 'AED', currencySymbol: 'AED', phoneCode: '+971' },
+  { code: 'SA', name: 'Saudi Arabia', currency: 'SAR', currencySymbol: 'SR', phoneCode: '+966' },
+  { code: 'IL', name: 'Israel', currency: 'ILS', currencySymbol: '₪', phoneCode: '+972' },
+  { code: 'NZ', name: 'New Zealand', currency: 'NZD', currencySymbol: 'NZ$', phoneCode: '+64' }
+];
+
+// Postal code validation patterns by country
+export const POSTAL_CODE_PATTERNS: { [key: string]: RegExp } = {
+  US: /^\d{5}(-\d{4})?$/,
+  CA: /^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$/,
+  GB: /^[A-Z]{1,2}\d[A-Z\d]? \d[A-Z]{2}$/i,
+  AU: /^\d{4}$/,
+  DE: /^\d{5}$/,
+  FR: /^\d{5}$/,
+  IT: /^\d{5}$/,
+  ES: /^\d{5}$/,
+  NL: /^\d{4} [A-Z]{2}$/,
+  BE: /^\d{4}$/,
+  AT: /^\d{4}$/,
+  CH: /^\d{4}$/,
+  NO: /^\d{4}$/,
+  SE: /^\d{3} \d{2}$/,
+  DK: /^\d{4}$/,
+  FI: /^\d{5}$/,
+  IS: /^\d{3}$/,
+  IE: /^[A-Z]\d{2} [A-Z\d]{4}$/i,
+  PT: /^\d{4}-\d{3}$/,
+  GR: /^\d{3} \d{2}$/,
+  PL: /^\d{2}-\d{3}$/,
+  CZ: /^\d{3} \d{2}$/,
+  HU: /^\d{4}$/,
+  SK: /^\d{3} \d{2}$/,
+  SI: /^\d{4}$/,
+  HR: /^\d{5}$/,
+  RO: /^\d{6}$/,
+  BG: /^\d{4}$/,
+  EE: /^\d{5}$/,
+  LV: /^LV-\d{4}$/,
+  LT: /^LT-\d{5}$/,
+  JP: /^\d{3}-\d{4}$/,
+  KR: /^\d{5}$/,
+  CN: /^\d{6}$/,
+  IN: /^\d{6}$/,
+  SG: /^\d{6}$/,
+  HK: /^\d{6}$/,
+  TW: /^\d{3}(\d{2})?$/,
+  MY: /^\d{5}$/,
+  TH: /^\d{5}$/,
+  ID: /^\d{5}$/,
+  PH: /^\d{4}$/,
+  VN: /^\d{6}$/,
+  BR: /^\d{5}-\d{3}$/,
+  MX: /^\d{5}$/,
+  AR: /^[A-Z]\d{4}[A-Z]{3}$/i,
+  CL: /^\d{7}$/,
+  CO: /^\d{6}$/,
+  PE: /^\d{5}$/,
+  UY: /^\d{5}$/,
+  PY: /^\d{4}$/,
+  BO: /^\d{4}$/,
+  EC: /^\d{6}$/,
+  VE: /^\d{4}$/,
+  ZA: /^\d{4}$/,
+  EG: /^\d{5}$/,
+  MA: /^\d{5}$/,
+  KE: /^\d{5}$/,
+  NG: /^\d{6}$/,
+  GH: /^[A-Z]{2}-\d{3}-\d{4}$/i,
+  RU: /^\d{6}$/,
+  TR: /^\d{5}$/,
+  AE: /^\d{5}$/,
+  SA: /^\d{5}$/,
+  IL: /^\d{7}$/,
+  NZ: /^\d{4}$/
+};
+
+// Helper functions
+export const getCountryByCode = (code: string) => {
+  return COUNTRIES.find(country => country.code === code);
+};
+
+export const validatePostalCode = (country: string, postalCode: string): boolean => {
+  const pattern = POSTAL_CODE_PATTERNS[country];
+  if (!pattern) return true; // If no pattern defined, assume valid
+  return pattern.test(postalCode);
+};
+
+export const formatPrice = (price: number, currency: string = 'USD') => {
+  try {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: currency,
+      minimumFractionDigits: 0,
+    }).format(price);
+  } catch (error) {
+    // Fallback if currency is not supported
+    const country = COUNTRIES.find(c => c.currency === currency);
+    const symbol = country?.currencySymbol || '$';
+    return `${symbol}${price.toLocaleString()}`;
+  }
+};
