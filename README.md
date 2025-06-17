@@ -1,10 +1,10 @@
-# The Glen - Full Stack Vacation Rental Platform
+# Stay Finder - Full Stack Vacation Rental Platform
 
 A premium vacation rental platform built with React and Node.js, offering seamless property booking experiences.
 
 ## 🏡 Project Overview
 
-The Glen is a comprehensive vacation rental platform that connects property owners with travelers seeking unique accommodations. Built with modern web technologies, it provides a robust, scalable solution for property management and bookings.
+Stay Finder is a comprehensive vacation rental platform that connects property owners with travelers seeking unique accommodations. Built with modern web technologies, it provides a robust, scalable solution for property management and bookings.
 
 ## 🏗️ Architecture
 
@@ -141,4 +141,4 @@ npm start
 
 ---
 
-**The Glen** - Where every stay becomes a memorable experience 🏡✨
+**Stay Finder** - Where every stay becomes a memorable experience 🏡✨
