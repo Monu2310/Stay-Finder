@@ -1,4 +1,4 @@
-# 🏡 The Glen - Vacation Rental Platform
+# 🏡 Stay Finder - Vacation Rental Platform
 
 A modern, full-stack vacation rental platform built with React and Node.js, similar to Airbnb. The Glen allows users to discover, book, and manage vacation rental properties with a beautiful, responsive interface.
 
