@@ -1,0 +1,427 @@
+.listing-details {
+  padding: 40px 0;
+}
+
+.listing-header {
+  margin-bottom: 32px;
+}
+
+.listing-title-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.listing-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.listing-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.listing-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+  font-weight: 600;
+}
+
+.image-gallery {
+  margin-bottom: 40px;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-thumbnails {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.thumbnail {
+  flex-shrink: 0;
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail.active {
+  border-color: #667eea;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listing-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.listing-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.property-details {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.property-type {
+  margin-bottom: 16px;
+}
+
+.property-capacity {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.capacity-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.description-section h2,
+.amenities-section h2,
+.rules-section h2,
+.host-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.amenities-section {
+  padding: 24px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.amenity-item:hover {
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.amenity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 8px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.amenity-text {
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.no-amenities {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin: 0;
+}
+
+.rules-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rule-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.location-section {
+  padding: 24px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.location-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.location-details {
+  background: #f8f9fa;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.location-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.address-line {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.address-line:last-child {
+  margin-bottom: 0;
+}
+
+.location-map {
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.host-section {
+  padding-top: 24px;
+  border-top: 1px solid #e9ecef;
+}
+
+.host-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.host-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.host-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #667eea;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.host-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.host-role {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+
+.host-bio {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.booking-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.booking-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.price-amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.price-period {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.booking-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.rating-count {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.booking-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.booking-note {
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .listing-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .booking-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .listing-details {
+    padding: 20px 0;
+  }
+  
+  .listing-title-section h1 {
+    font-size: 24px;
+  }
+  
+  .listing-meta {
+    gap: 16px;
+  }
+  
+  .main-image {
+    height: 250px;
+  }
+  
+  .property-capacity {
+    gap: 16px;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .location-info {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .location-map {
+    height: 250px;
+  }
+  
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .host-avatar {
+    align-self: center;
+  }
+}
